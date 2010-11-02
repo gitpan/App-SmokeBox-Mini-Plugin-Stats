@@ -1,0 +1,48 @@
+{
+   "abstract" : "gather smoking statistics from minismokebox",
+   "author" : [
+      "Chris Williams <chris@bingosnet.co.uk>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.102342, CPAN::Meta::Converter version 2.102400",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "App-SmokeBox-Mini-Plugin-Stats",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.47"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DBD::SQLite" : "1.31",
+            "DBI" : "1.614",
+            "POE" : "1.293",
+            "POE::Component::EasyDBI" : "1.23",
+            "perl" : "5.006"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://github.com/bingos/app-smokebox-mini-plugin-stats/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/bingos/app-smokebox-mini-plugin-stats.git",
+         "web" : "http://github.com/bingos/app-smokebox-mini-plugin-stats/tree"
+      }
+   },
+   "version" : "0.02"
+}
+
