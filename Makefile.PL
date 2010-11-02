@@ -25,9 +25,10 @@ my %WriteMakefileArgs = (
     'DBD::SQLite' => '1.31',
     'DBI' => '1.614',
     'POE' => '1.293',
-    'POE::Component::EasyDBI' => '1.23'
+    'POE::Component::EasyDBI' => '1.23',
+    'Time::HiRes' => '0'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }
