@@ -23,4 +23,4 @@ requires:
 resources:
   homepage: http://github.com/bingos/app-smokebox-mini-plugin-stats/tree
   repository: git://github.com/bingos/app-smokebox-mini-plugin-stats.git
-version: 0.04
+version: 0.06

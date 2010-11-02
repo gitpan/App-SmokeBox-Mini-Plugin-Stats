@@ -1,6 +1,6 @@
 package App::SmokeBox::Mini::Plugin::Stats;
 BEGIN {
-  $App::SmokeBox::Mini::Plugin::Stats::VERSION = '0.04';
+  $App::SmokeBox::Mini::Plugin::Stats::VERSION = '0.06';
 }
 
 #ABSTRACT: gather smoking statistics from minismokebox
@@ -87,7 +87,7 @@ sub sbox_smoke {
   my ($result) = $data->{result}->results;
   my $killed = scalar grep { /kill$/ } keys %{ $result };
   $heap->{_db}->insert(
-    sql => 'INSERT INTO jobs values(?,?,?,?,?,?,?)',
+    sql => 'INSERT INTO jobs values(?,?,?,?,?,?,?,?)',
     placeholders => [ Time::HiRes::time, $heap->{vers}, $heap->{arch}, $dist, $result->{start_time}, $result->{end_time}, $killed, $result->{status} ],
     event => '_db_result',
   );
@@ -117,7 +117,7 @@ App::SmokeBox::Mini::Plugin::Stats - gather smoking statistics from minismokebox
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 DESCRIPTION
 

@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     'POE::Component::EasyDBI' => '1.23',
     'Time::HiRes' => '0'
   },
-  'VERSION' => '0.04',
+  'VERSION' => '0.06',
   'test' => {
     'TESTS' => 't/*.t'
   }
