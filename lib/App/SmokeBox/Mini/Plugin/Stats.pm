@@ -1,6 +1,6 @@
 package App::SmokeBox::Mini::Plugin::Stats;
 BEGIN {
-  $App::SmokeBox::Mini::Plugin::Stats::VERSION = '0.06';
+  $App::SmokeBox::Mini::Plugin::Stats::VERSION = '0.08';
 }
 
 #ABSTRACT: gather smoking statistics from minismokebox
@@ -117,7 +117,7 @@ App::SmokeBox::Mini::Plugin::Stats - gather smoking statistics from minismokebox
 
 =head1 VERSION
 
-version 0.06
+version 0.08
 
 =head1 DESCRIPTION
 

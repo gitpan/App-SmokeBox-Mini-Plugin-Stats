@@ -3,7 +3,7 @@ NAME
     minismokebox
 
 VERSION
-    version 0.06
+    version 0.08
 
 DESCRIPTION
     App::SmokeBox::Mini::Plugin::Stats is a statistics gathering plugin for

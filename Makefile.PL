@@ -22,13 +22,15 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'App::SmokeBox::Mini::Plugin::Stats',
   'PREREQ_PM' => {
+    'App::SmokeBox::Mini' => '0.32',
+    'App::SmokeBox::Mini::Plugin' => '0.32',
     'DBD::SQLite' => '1.31',
     'DBI' => '1.614',
     'POE' => '1.293',
     'POE::Component::EasyDBI' => '1.23',
     'Time::HiRes' => '0'
   },
-  'VERSION' => '0.06',
+  'VERSION' => '0.08',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -14,6 +14,8 @@ meta-spec:
   version: 1.4
 name: App-SmokeBox-Mini-Plugin-Stats
 requires:
+  App::SmokeBox::Mini: 0.32
+  App::SmokeBox::Mini::Plugin: 0.32
   DBD::SQLite: 1.31
   DBI: 1.614
   POE: 1.293
@@ -23,4 +25,4 @@ requires:
 resources:
   homepage: http://github.com/bingos/app-smokebox-mini-plugin-stats/tree
   repository: git://github.com/bingos/app-smokebox-mini-plugin-stats.git
-version: 0.06
+version: 0.08
