@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102342, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930001",
    "license" : [
       "perl_5"
    ],
@@ -21,7 +21,7 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
@@ -39,13 +39,13 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/bingos/app-smokebox-mini-plugin-stats/tree",
+      "homepage" : "https://github.com/bingos/app-smokebox-mini-plugin-stats",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bingos/app-smokebox-mini-plugin-stats.git",
-         "web" : "http://github.com/bingos/app-smokebox-mini-plugin-stats/tree"
+         "url" : "https://github.com/bingos/app-smokebox-mini-plugin-stats",
+         "web" : "https://github.com/bingos/app-smokebox-mini-plugin-stats"
       }
    },
-   "version" : "0.08"
+   "version" : "0.10"
 }
 

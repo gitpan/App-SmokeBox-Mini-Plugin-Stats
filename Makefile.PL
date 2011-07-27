@@ -2,9 +2,9 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+use 5.006;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -15,7 +15,7 @@ my %WriteMakefileArgs = (
     'Test::More' => '0.47'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'App-SmokeBox-Mini-Plugin-Stats',
   'EXE_FILES' => [],
@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     'POE::Component::EasyDBI' => '1.23',
     'Time::HiRes' => '0'
   },
-  'VERSION' => '0.08',
+  'VERSION' => '0.10',
   'test' => {
     'TESTS' => 't/*.t'
   }

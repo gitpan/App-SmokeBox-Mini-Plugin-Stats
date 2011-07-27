@@ -1,4 +1,14 @@
 ==============================
+2011-07-27 12:27:01 +0100 0.10
+==============================
+
+  commit bb5fbb5268f684351539887e07f02f3a92688673
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jul 27 12:27:01 2011 +0100
+  
+    Add an 'enable' configuration option so we can disable plugin use 
+
+==============================
 2010-11-03 23:28:39 +0000 0.08
 ==============================
 
@@ -28,6 +38,6 @@
   
     Add timestamps to the database tables 
 
-===================================
-End of changes in the last 365 days
-===================================
+====================================
+End of changes in the last 1825 days
+====================================

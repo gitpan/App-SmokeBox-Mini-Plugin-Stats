@@ -1,6 +1,6 @@
 package App::SmokeBox::Mini::Plugin::Stats;
 BEGIN {
-  $App::SmokeBox::Mini::Plugin::Stats::VERSION = '0.08';
+  $App::SmokeBox::Mini::Plugin::Stats::VERSION = '0.10';
 }
 
 #ABSTRACT: gather smoking statistics from minismokebox
@@ -18,7 +18,8 @@ sub init {
   my $package = shift;
   my $config  = shift;
   return unless $config and ref $config eq 'Config::Tiny';
-  #return unless $config->{Stats};
+  return if
+    $config->{Stats} and defined $config->{Stats}->{enable} and !$config->{Stats}->{enable};
   my $heap = $config->{Stats} || {};
   POE::Session->create(
      package_states => [
@@ -117,14 +118,22 @@ App::SmokeBox::Mini::Plugin::Stats - gather smoking statistics from minismokebox
 
 =head1 VERSION
 
-version 0.08
+version 0.10
+
+=head1 SYNOPSIS
+
+  # example minismokebox configuration file
+
+  [Stats]
+
+  enable=0
 
 =head1 DESCRIPTION
 
-App::SmokeBox::Mini::Plugin::Stats is a statistics gathering plugin for L<App::SmokeBox::Mini> and 
+App::SmokeBox::Mini::Plugin::Stats is a statistics gathering plugin for L<App::SmokeBox::Mini> and
 L<minismokebox> that collects all jobs and smokers data and logs it to a L<DBD::SQLite> based database.
 
-The database file will be found in the C<.smokebox> directory, see L<minismokebox> documentation for 
+The database file will be found in the C<.smokebox> directory, see L<minismokebox> documentation for
 details of its location and how to affect its location.
 
 =for Pod::Coverage   init
@@ -132,13 +141,25 @@ details of its location and how to affect its location.
   sbox_smoke
   sbox_stop
 
+=head1 CONFIGURATION
+
+This plugin uses an C<[Stats]> section within the L<minismokebox> configuration file.
+
+=over
+
+=item C<enable>
+
+By default the plugin is enabled. You may set this to a C<false> value to disable the use of the plugin
+
+=back
+
 =head1 AUTHOR
 
 Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Chris Williams.
+This software is copyright (c) 2011 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
